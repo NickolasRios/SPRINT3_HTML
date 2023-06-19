@@ -11,41 +11,46 @@
 
 <body>
   <nav id="menu-h">
-    <ul>
-      <li><img src="img/trysports2.jpg" alt="" style="width: 150px" /></li>
-      <li><a href="#">HOMENS</a></li>
-      <li><a href="#">MULHERES</a></li>
-      <li><a href="#">CRIANÇAS</a></li>
-      <li><a href="#">CALÇADOS</a></li>
-      <li><a href="#">ROUPAS</a></li>
-      <li><a href="#">ACESSÓRIOS</a></li>
-      <li><a href="#">EQUIPAMENTO</a></li>
+    <div class="container-nav">
+      <div class="header-nav">
+        <img src="img/trysports2.jpg" alt="" style="width: 150px" />
+        <button class="btn">
+          CADASTRAR
+        </button>
 
-
-      <button class="btn">
-        CADASTRAR
-    </button>
-
-    <button class="btn">
-      ENTRAR
-  </button>
-
-
-      <!-- Barra de Pesquisa -->
-      <div class="barrapesquisa">
-        <div class="group">
-          <svg class="icon" aria-hidden="true" viewBox="0 0 24 24">
-            <g>
-              <path
-                d="M21.53 20.47l-3.66-3.66C19.195 15.24 20 13.214 20 11c0-4.97-4.03-9-9-9s-9 4.03-9 9 4.03 9 9 9c2.215 0 4.24-.804 5.808-2.13l3.66 3.66c.147.146.34.22.53.22s.385-.073.53-.22c.295-.293.295-.767.002-1.06zM3.5 11c0-4.135 3.365-7.5 7.5-7.5s7.5 3.365 7.5 7.5-3.365 7.5-7.5 7.5-7.5-3.365-7.5-7.5z">
-              </path>
-            </g>
-          </svg>
-          <input placeholder="PROCURE PRODUTOS" type="search" class="input">
-        </div>
-
+        <button class="btn">
+          ENTRAR
+        </button>
       </div>
-    </ul>
+
+      <div class="main-nav">
+        <ul>
+          <li><a href="#">HOMENS</a></li>
+          <li><a href="#">MULHERES</a></li>
+          <li><a href="#">CRIANÇAS</a></li>
+          <li><a href="#">CALÇADOS</a></li>
+          <li><a href="#">ROUPAS</a></li>
+          <li><a href="#">ACESSÓRIOS</a></li>
+          <li><a href="#">EQUIPAMENTO</a></li>
+        </ul>
+
+        
+
+        <!-- Barra de Pesquisa -->
+        <div class="barrapesquisa">
+          <div class="group">
+            <svg class="icon" aria-hidden="true" viewBox="0 0 24 24">
+              <g>
+                <path
+                  d="M21.53 20.47l-3.66-3.66C19.195 15.24 20 13.214 20 11c0-4.97-4.03-9-9-9s-9 4.03-9 9 4.03 9 9 9c2.215 0 4.24-.804 5.808-2.13l3.66 3.66c.147.146.34.22.53.22s.385-.073.53-.22c.295-.293.295-.767.002-1.06zM3.5 11c0-4.135 3.365-7.5 7.5-7.5s7.5 3.365 7.5 7.5-3.365 7.5-7.5 7.5-7.5-3.365-7.5-7.5z">
+                </path>
+              </g>
+            </svg>
+            <input placeholder="PROCURE PRODUTOS" type="search" class="input">
+          </div>
+        </div>
+      </div>
+    </div>
   </nav>
 
   <div class="banner">
@@ -56,34 +61,34 @@
   </div>
 
 
- <!-- Banner rotativo -->
+  <!-- Banner rotativo -->
 
- <!-- <h2>Automatic Slideshow</h2>
-  <p>Change image every 2 seconds:</p> --> 
-  
+  <!-- <h2>Automatic Slideshow</h2>
+  <p>Change image every 2 seconds:</p> -->
+
   <div class="slideshow-container">
-  
+
     <div class="mySlides fade">
       <div class="numbertext">1 / 3</div>
       <img src="img/tela.jpg" style="width:100%">
 
     </div>
-  
+
     <div class="mySlides fade">
       <div class="numbertext">2 / 3</div>
       <img src="img/tela1.jpg" style="width:100%">
 
     </div>
-  
+
     <div class="mySlides fade">
       <div class="numbertext">3 / 3</div>
       <img src="img/tela2.jpg" style="width:100%">
 
     </div>
-  
+
   </div>
   <br>
-  
+
   <div style="text-align:center">
     <span class="dot"></span>
     <span class="dot"></span>
@@ -256,15 +261,10 @@
     }
     slides[slideIndex - 1].style.display = "block";
     dots[slideIndex - 1].className += " active";
-    setTimeout(showSlides, 2000); // Change image every 2 seconds
+    setTimeout(showSlides, 5000); // Change image every 5 seconds
   }
 </script>
 
 
 
 </html>
-
-
-
-
-

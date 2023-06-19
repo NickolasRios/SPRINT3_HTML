@@ -12,6 +12,7 @@
 #menu-h ul {
   max-width: 80%;
   padding: 15px;
+  margin-left: 0;
 }
 
 #menu-h ul li {
@@ -56,9 +57,33 @@
 }
 body, html {
     height: 100%;
+    overflow-x: hidden;
 }
 
+/* Estilos para dispositivos de tela grande */
+.body {
+  width: 960px;
+  margin: 0 auto;
+}
 
+/* Estilos para dispositivos de tela média */
+@media screen and (max-width: 800px) {
+  .btn {
+    width: 50%;
+    padding: 40px;
+    margin: auto;
+  }
+}
+
+/* Estilos para dispositivos de tela pequena */
+@media (max-width: 500px) {
+  button {
+    width: 80%;
+    padding: 0 40px;
+    margin: 0 auto;
+    background-color: lawngreen !important;
+  }
+}
   
 /*Deixando o Menu Responsivo */
 @media(max-width: 800px) {
@@ -421,11 +446,37 @@ button:active {
   transform: scale(0.9);
 }
 
+/* Area que engloba a nav inteira */
+.container-nav{
+  width: 75%;
+}
+
+/* Parte de cima da nav*/
+
+.header-nav{
+  max-width: 100%;
+  margin: 0;
+}
+
+/* Parte principal da nav*/
+ 
+.main-nav{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 0;
+}
+
+.barrapesquisa{
+  width: 40%;
+  margin: 0;
+}
+
 /* Botão Cadastrar e Entrar */
 
 .btn {
-  margin-right: 40px;
-  margin-top: 20PX;
+  margin-top: 20px;
   float: right;
   font-size: 17px;
   background: transparent;
@@ -435,6 +486,10 @@ button:active {
   text-transform: uppercase;
   position: relative;
   transition: .5s ease;
+}
+
+.btn:last-child{
+  margin-right: 40px;
 }
 
 .btn::before {
@@ -580,3 +635,5 @@ button:active {
 @media only screen and (max-width: 300px) {
   .text {font-size: 11px}
 }
+
+
